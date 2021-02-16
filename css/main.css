@@ -1,0 +1,295 @@
+/*! HTML5 Boilerplate v8.0.0 | MIT License | https://html5boilerplate.com/ */
+
+/* main.css 2.1.0 | MIT License | https://github.com/h5bp/main.css#readme */
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+  color: #222;
+  font-size: 1em;
+  line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * Vendor-prefixed and regular ::selection selectors cannot be combined:
+ * https://stackoverflow.com/a/16982510/7133471
+ *
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+  resize: vertical;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden,
+[hidden] {
+  display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ *
+ * 1. For long content, line feeds are not interpreted as spaces and small width
+ *    causes content to wrap 1 word per line:
+ *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+ */
+
+.sr-only {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  /* 1 */
+}
+
+/*
+ * Extends the .sr-only class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.sr-only.focusable:active,
+.sr-only.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  white-space: inherit;
+  width: auto;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+  visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix::before,
+.clearfix::after {
+  content: " ";
+  display: table;
+}
+
+.clearfix::after {
+  clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+  /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+  (-webkit-min-device-pixel-ratio: 1.25),
+  (min-resolution: 1.25dppx),
+  (min-resolution: 120dpi) {
+  /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   https://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+  *,
+  *::before,
+  *::after {
+    background: #fff !important;
+    color: #000 !important;
+    /* Black prints faster */
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+
+  a[href]::after {
+    content: " (" attr(href) ")";
+  }
+
+  abbr[title]::after {
+    content: " (" attr(title) ")";
+  }
+
+  /*
+   * Don't show links that are fragment identifiers,
+   * or use the `javascript:` pseudo protocol
+   */
+  a[href^="#"]::after,
+  a[href^="javascript:"]::after {
+    content: "";
+  }
+
+  pre {
+    white-space: pre-wrap !important;
+  }
+
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+
+  /*
+   * Printing Tables:
+   * https://web.archive.org/web/20180815150934/http://css-discuss.incutio.com/wiki/Printing_Tables
+   */
+  thead {
+    display: table-header-group;
+  }
+
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+}
+
+/*
+ STYLES HERE
+*/
+
+#s1 {
+  height: 100vh;
+  width: 100vw;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+#s2 {
+  height: 400vh;
+  width: 100vh;
+  position: relative;
+}
+
+#s2inner {
+  position: sticky;
+  background: url("data:image/jpeg;base64,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");
+  height: 100vh;
+  width : 400vh;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translateX(calc(var(--scroll) * -300vh));
+}
+
