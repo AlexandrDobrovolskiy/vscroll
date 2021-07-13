@@ -266,13 +266,24 @@ textarea {
 */
 
 #s1 {
-  height: 100vh;
+  height: 300vh;
   width: 100vw;
   background-color: black;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
   color: white;
+  padding-top: 100vh;
+}
+
+#s1 > div {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+#s1 > div:nth-child(2), #s1 > div:nth-child(4) {
+  transform: rotate(-180deg);
 }
 
 #s2 {

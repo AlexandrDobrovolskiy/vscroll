@@ -8,3 +8,54 @@ window.addEventListener('scroll', () => {
     style.setProperty('--scroll', 0);
   }
 }, false);
+
+
+// LOTTIE
+
+LottieInteractivity.create({
+  mode: 'scroll',
+  player: '#l1',
+  actions: [
+    {
+      visibility: [0, 1],
+      type: 'seek',
+      frames: [0, 60],
+    },
+  ],
+});
+
+LottieInteractivity.create({
+  mode: 'scroll',
+  player: '#l2',
+  actions: [
+    {
+      visibility: [0,1],
+      type: 'seek',
+      frames: [0, 60],
+    },
+  ],
+});
+
+LottieInteractivity.create({
+  mode: 'scroll',
+  player: '#l3',
+  actions: [
+    {
+      visibility: [0,1],
+      type: 'seek',
+      frames: [0, 60],
+    },
+  ],
+});
+
+LottieInteractivity.create({
+  mode: 'scroll',
+  player: '#l4',
+  actions: [
+    {
+      visibility: [0,1],
+      type: 'seek',
+      frames: [0, 60],
+    },
+  ],
+});
